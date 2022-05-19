@@ -1,26 +1,18 @@
 /* eslint-disable */
 'use strict';
-(() => {
 
-    window.onload = () => {
-        let countryHeaders = document.getElementsByClassName("countries")[0].childNodes;
-        countryHeaders.forEach(header => {
-            header.addEventListener("click", () => {
-                showCountryArticle(header.innerText);
-            })
-        });
+
+(function() {
+    window.addEventListener("load", init);
+
+    function init() {
+        document.getElementsByClassName("singleCountry")[0].addEventListener("click", clicked)
     }
 
-    function showCountryArticle(countryName) {
-        let allArticles = Array.from(document.getElementsByClassName("country"));
-        let articleToShowID = countryName+"Article";
-
-        allArticles.forEach(article => {
-            if (article.id != articleToShowID)
-            article.classList.add("hidden")
-        });
-
-        document.getElementById(articleToShowID).classList.toggle("hidden");
+    function clicked() {
+        document.getElementById("agenda").classList.toggle("hidden")
     }
 
-})();
+  })();
+
+

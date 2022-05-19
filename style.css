@@ -10,12 +10,14 @@ h1 {
   text-shadow: #000000 20px 15px 20px;
 }
 
-p, ui {
+p, ul {
   color: #393a3ac9;
 }
+
 .singleCountry:hover {
   text-decoration: underline;
-  text-decoration-color: crimson;
+  text-decoration-color: red;
+  cursor: pointer;
 }
 
 .country {
@@ -32,18 +34,24 @@ p, ui {
 #sources {
   height: 100vh;
   justify-content: center;
-  background-image: url("sources.jpg");
+  background-image: url("education.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
 }
 
 #source_list {
-  margin-left: 20%;
-  margin-right: 20%;
+  list-style: none;
+  text-indent: -28px;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#item {
+#source_list > li {
+
+  width: 40%;
   margin-top: 2%;
   font-size: 20px;
   color: #ffffff;
@@ -57,7 +65,7 @@ p, ui {
 header {
   height: 100vh;
   justify-content: center;
-  background-image: url("education.jpg");
+  background-image: url("is.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -66,6 +74,9 @@ header {
 
 footer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
@@ -73,6 +84,11 @@ h2 {
   /*text-decoration-line: underline; */
   font-family: 'PT Serif', serif;
   margin-bottom: 0;
+}
+
+.underline {
+  border-bottom: 1px solid red;
+  width: 30%;
 }
 
 #sources > h2 {
@@ -107,10 +123,6 @@ header > blockquote {
   text-shadow: #000000 20px 15px 20px;
 }
 
-article > img {
-  height: 150px;
-  width: 150px;
-}
 
 article > hr {
   width: 65%;
@@ -146,7 +158,7 @@ footer > p, #test > p, #click {
 }
 
 #intro, #facts, #test, #university {
-  width: 60%;
+  width: 45%;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -169,13 +181,11 @@ footer > p, #test > p, #click {
 }
 
 #intro img {
-  height: 300px;
-  width: 300px;
-  border-radius: 10%;
-  margin-right: 50px;
+  height: 70%;
+  width: 70%;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 120px;
 }
 
 #univerity img {
@@ -188,12 +198,16 @@ article > p {
 }
 
 
-#facts a:link {
-  color: #FFA600;
+
+p {
+  text-indent: 30px ;
 }
 
-#facts a:visited {
-  color: #1B505E;
+#exception {
+  text-indent: 0px;
 }
 
-
+ul {
+  font-size: 20px;
+  list-style-position: outside;
+}
