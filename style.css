@@ -1,252 +1,199 @@
 body {
-    font-family: 'Assistant', sans-serif;
-  }
-  
-  h1 {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    font-size: 120px;
-    margin-bottom: 0px;
-    text-shadow: #000000 20px 15px 20px;
-  }
-  
-  .countries {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 2%;
-    font-size: 30px;
-    text-emphasis: bold;
-  }
-  
-  .dropdown > h2 {
-    margin-bottom: 0%;
-  }
-  
-  .singleCountry {
-    border-width: 2px;
-    border-color: black;
-  }
-  
-  .singleCountry:hover {
-    text-decoration: underline;
-    text-decoration-color: crimson;
-  }
-  
-  .country {
-    margin-left: 5%;
-    font-size: 20px;
-    margin-right: 5%;
-    margin-bottom: 2%;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  #table {
-    height: 10%;
-    margin-right: 3%;
-  }
-  
-  #money {
-    height: 10%;
-    width: 30%;
-    margin-left: 15%;
-    margin-right: 5%;
-    margin-top: 4%;
-  }
-  
-  #sources {
-    height: 100vh;
-    justify-content: center;
-    background-image: url("sources.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-  }
-  
-  #source_list {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  
-  #item {
-    margin-top: 2%;
-    font-size: 20px;
-    color: #ffffff;
-  }
-  
-  #sources > h2 {
-    color: white;
-    padding-top: 2%;
-  }
-  
-  header {
-    height: 100vh;
-    justify-content: center;
-    background-image: url("education.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-  }
-  
-  footer {
-    width: 100%;
-  }
-  
-  h2 {
-    font-size: 50px;
-    /*text-decoration-line: underline; */
-    font-family: 'Istok Web', sans-serif;
-  }
-  
-  article {
-    margin: 15px;
-    height: 400px;
-    width: 300px;
-    background-color: #d1d7dd00;
-    opacity: 80%;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #00e1ff;
-    box-shadow: black;
-  
-  }
-  
-  tr {
-    margin-right: 20%
-  }
-  
-  header, article {
-    flex-direction: column;
-  }
-  
-  article > p {
-    align-self: flex-start;
-  }
-  
-  header > blockquote {
-    margin-top: 0px;
-    font-size: 25px;
-    font-weight: bold;
-    text-shadow: #000000 20px 15px 20px;
-  }
-  
-  article > img {
-    height: 150px;
-    width: 150px;
-  }
-  
-  article > hr {
-    width: 65%;
-  }
-  
-  footer > p, article {
-    padding: 20px;
-  }
-  
-  header, #intro > section, #test > section, article, #university > section {
-    display: flex;
-  }
-  
-  header, #test > section, article {
-    align-items: center;
-  }
-  
-  header, abbr {
-    color: #ffffff;
-  }
-  
-  #test > p, #click {
-    font-size: 25px;
-  }
-  
-  #test > h2 {
-    color: black;
-    font-size: 50px;
-  }
-  
-  footer > p, h2, #test > p, #click {
-    text-align: center;
-  }
-  
-  #intro, #facts, #test, #university {
-    width: 60%;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  #intro, #facts, #university {
-    padding: 30px;
-    border-top-width: 5px;
-    border-top-style: solid;
-    border-color: #00e1ff;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-  }
-  
-  #comparative {
-    border-color: #00e1ff;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-    margin-left: 18%;
-    margin-right: 17%;
-  }
-  
-  
-  
-  #intro, #university {
-    margin-top: 30px;
-  }
-  
-  #intro p, ol > li, #university p {
-    font-size: 20px;
-  }
-  
-  #intro img {
-    height: 300px;
-    width: 300px;
-    border-radius: 10%;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
-  
-  #univerity img {
-    height: auto;
-    width: 300px;
-  }
-  
-  #facts > p, article > p {
-    font-size: 24px;
-  }
-  
-  #facts > h2 {
-    font-size: 325%;
-    margin-top: 1%;
-  }
-  
-  #facts a:link {
-    color: #FFA600;
-  }
-  
-  #facts a:visited {
-    color: #1B505E;
-  }
-  
-  #test > section {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  article:hover .answer {
-    display: inline;
-  }
-  
-  .answer {
-    color: #09acf7;
-    display: none;
-  }
+  font-family: 'Assistant', sans-serif;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  font-size: 120px;
+  margin-bottom: 0px;
+  text-shadow: #000000 20px 15px 20px;
+}
+
+p, ui {
+  color: #393a3ac9;
+}
+.singleCountry:hover {
+  text-decoration: underline;
+  text-decoration-color: crimson;
+}
+
+.country {
+  margin-left: 5%;
+  font-size: 20px;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.hidden {
+  display: none;
+}
+
+#sources {
+  height: 100vh;
+  justify-content: center;
+  background-image: url("sources.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+#source_list {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#item {
+  margin-top: 2%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#sources > h2 {
+  color: white;
+  padding-top: 2%;
+}
+
+header {
+  height: 100vh;
+  justify-content: center;
+  background-image: url("education.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+h2 {
+  font-size: 35px;
+  /*text-decoration-line: underline; */
+  font-family: 'PT Serif', serif;
+  margin-bottom: 0;
+}
+
+#sources > h2 {
+  text-align: center;
+}
+
+article {
+  margin: 15px;
+  height: 400px;
+  width: 300px;
+  background-color: #d1d7dd00;
+  opacity: 80%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00e1ff;
+  box-shadow: black;
+
+}
+
+header, article {
+  flex-direction: column;
+}
+
+article > p {
+  align-self: flex-start;
+}
+
+header > blockquote {
+  margin-top: 0px;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: #000000 20px 15px 20px;
+}
+
+article > img {
+  height: 150px;
+  width: 150px;
+}
+
+article > hr {
+  width: 65%;
+}
+
+footer > p, article {
+  padding: 20px;
+}
+
+header, #test > section, article {
+  display: flex;
+}
+
+header, #test > section, article {
+  align-items: center;
+}
+
+header, abbr {
+  color: #ffffff;
+}
+
+#test > p, #click {
+  font-size: 25px;
+}
+
+#test > h2 {
+  color: black;
+  font-size: 50px;
+}
+
+footer > p, #test > p, #click {
+  text-align: center;
+}
+
+#intro, #facts, #test, #university {
+  width: 60%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intro, #facts {
+  padding-bottom: 1%;
+  border-color: black;
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
+}
+
+
+#intro, #university {
+  margin-top: 30px;
+}
+
+#intro p, ol > li, #university p {
+  font-size: 20px;
+}
+
+#intro img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10%;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#univerity img {
+  height: auto;
+  width: 300px;
+}
+
+article > p {
+  font-size: 24px;
+}
+
+
+#facts a:link {
+  color: #FFA600;
+}
+
+#facts a:visited {
+  color: #1B505E;
+}
+
+
