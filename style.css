@@ -10,66 +10,24 @@ h1 {
   text-shadow: #000000 20px 15px 20px;
 }
 
-p, ul {
-  color: #393a3ac9;
-}
-
-.singleCountry:hover {
-  text-decoration: underline;
-  text-decoration-color: red;
-  cursor: pointer;
-}
-
-.country {
-  margin-left: 5%;
-  font-size: 20px;
-  margin-right: 5%;
-  margin-bottom: 2%;
-}
-
-.hidden {
-  display: none;
-}
-
-#sources {
-  height: 100vh;
-  justify-content: center;
-  background-image: url("education.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-}
-
-#source_list {
-  list-style: none;
-  text-indent: -28px;
-  padding-left: 28px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#source_list > li {
-
-  width: 40%;
-  margin-top: 2%;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-#sources > h2 {
-  color: white;
-  padding-top: 2%;
+h2 {
+  font-size: 35px;
+  font-family: 'PT Serif', serif;
+  margin-bottom: 0;
 }
 
 header {
   height: 100vh;
   justify-content: center;
-  background-image: url("is.jpg");
+  background-image: url("imgs/is.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  flex-direction: column;
   width: 100%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }
 
 footer {
@@ -79,11 +37,73 @@ footer {
   align-items: center;
 }
 
-h2 {
+p {
+  text-indent: 30px ;
+}
+
+ul {
+  font-size: 20px;
+  list-style-position: outside;
+  list-style-type: square;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+p, ul {
+  color: #393a3ac9;
+}
+
+header > blockquote {
+  margin-top: 0px;
   font-size: 35px;
-  /*text-decoration-line: underline; */
+  font-weight: bold;
+  text-shadow: #000000 20px 15px 20px;
   font-family: 'PT Serif', serif;
-  margin-bottom: 0;
+}
+
+footer > p {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#sources {
+  height: 90vh;
+  justify-content: center;
+  background-image: url("imgs/education.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  box-shadow: inset 50px 50px 600px #000000;
+}
+
+#sourceList {
+  list-style: none;
+  text-indent: -28px;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sourceList > li {
+  width: 40%;
+  margin-top: 1%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#sources > h2 {
+  color: white;
+  padding-top: 2%;
+}
+
+#sources > h2 {
+  text-align: center;
 }
 
 .underline {
@@ -91,96 +111,33 @@ h2 {
   width: 30%;
 }
 
-#sources > h2 {
+#click:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  cursor: pointer;
+}
+
+footer > p, #aroundAgenda, #click {
   text-align: center;
 }
 
-article {
-  margin: 15px;
-  height: 400px;
-  width: 300px;
-  background-color: #d1d7dd00;
-  opacity: 80%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #00e1ff;
-  box-shadow: black;
-
-}
-
-header, article {
-  flex-direction: column;
-}
-
-article > p {
-  align-self: flex-start;
-}
-
-header > blockquote {
-  margin-top: 0px;
-  font-size: 25px;
-  font-weight: bold;
-  text-shadow: #000000 20px 15px 20px;
-}
-
-
-article > hr {
-  width: 65%;
-}
-
-footer > p, article {
-  padding: 20px;
-}
-
-header, #test > section, article {
-  display: flex;
-}
-
-header, #test > section, article {
-  align-items: center;
-}
-
-header, abbr {
-  color: #ffffff;
-}
-
-#test > p, #click {
-  font-size: 25px;
-}
-
-#test > h2 {
-  color: black;
-  font-size: 50px;
-}
-
-footer > p, #test > p, #click {
-  text-align: center;
-}
-
-#intro, #facts, #test, #university {
+.box {
   width: 45%;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-
-#intro, #facts {
   padding-bottom: 1%;
   border-color: black;
   border-bottom-width: 0.5px;
   border-bottom-style: solid;
-}
-
-
-#intro, #university {
   margin-top: 30px;
 }
 
-#intro p, ol > li, #university p {
+.box p {
   font-size: 20px;
 }
 
-#intro img {
+.box img {
   height: 70%;
   width: 70%;
   margin-top: 10px;
@@ -188,26 +145,10 @@ footer > p, #test > p, #click {
   margin-left: 120px;
 }
 
-#univerity img {
-  height: auto;
-  width: 300px;
-}
-
-article > p {
-  font-size: 24px;
-}
-
-
-
-p {
-  text-indent: 30px ;
-}
-
 #exception {
   text-indent: 0px;
 }
 
-ul {
+#aroundAgenda {
   font-size: 20px;
-  list-style-position: outside;
 }

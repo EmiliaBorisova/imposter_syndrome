@@ -6,7 +6,7 @@
     window.addEventListener("load", init);
 
     function init() {
-        document.getElementsByClassName("singleCountry")[0].addEventListener("click", clicked)
+        document.getElementById("click").addEventListener("click", clicked)
     }
 
     function clicked() {
